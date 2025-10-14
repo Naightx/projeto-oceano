@@ -1,0 +1,256 @@
+/* ======= ESTILO GERAL ======= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Azul bem clarinho */
+  color: #003366; /* Azul escuro para textos */
+}
+
+/* ======= TOPO ======= */
+header {
+  background-color: #0056b3; /* Azul forte */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
+}
+
+/* ======= SEÇÃO PRINCIPAL ======= */
+.main-section {
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.main-section h2 {
+  margin-top: 0;
+}
+
+.main-section p {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.main-section button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.main-section button:hover {
+  background-color: #003f80;
+}
+
+/* ======= GRID DE PROJETOS ======= */
+.projects {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background-color: #e5e5e5;
+}
+
+.project-card .content {
+  padding: 12px 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-card h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.project-card button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.project-card button:hover {
+  background-color: #003f80;
+}
+
+/* ======= PÁGINA DE PROJETO (sem galeria) ======= */
+.projeto-detalhes {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.banner {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.perguntas h2,
+.audio-section h2,
+.resumo h2 {
+  margin-top: 0;
+  color: #0056b3;
+}
+
+.perguntas ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.audio-section audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.resumo p {
+  line-height: 1.4;
+  text-align: justify;
+}
+
+/* Navegação entre projetos */
+.navegacao-projetos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  border: none;
+  text-align: center;
+}
+
+.nav-btn:hover {
+  background-color: #003f80;
+}
+
+/* Botão voltar para a principal */
+.voltar-principal {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.btn-voltar {
+  background-color: #00a0e0;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+  background-color: #0077a8;
+}
+
+/* ======= ESTILOS PARA A NOVA SEÇÃO PRINCIPAL ======= */
+
+/* Ajuste para melhorar a legibilidade de textos longos */
+.main-section p, .main-section li {
+  text-align: left; /* Alinhar o texto à esquerda é melhor para leitura */
+  line-height: 1.7; /* Mais espaço entre as linhas */
+}
+
+/* Estilo para a caixa de citação/destaque */
+.main-section .destaque {
+  margin: 25px 0;
+  padding: 20px;
+  background-color: #f0f8ff; /* Mesmo azul bem clarinho do fundo */
+  border-left: 5px solid #0056b3; /* Usa a cor principal para dar ênfase */
+  border-radius: 8px;
+}
+
+.main-section blockquote {
+  margin: 0;
+  font-style: italic;
+  color: #003366; /* Cor escura do texto */
+  font-size: 1.05rem;
+}
+
+/* Estilo para os subtítulos dentro da seção */
+.main-section h3 {
+  color: #0056b3; /* Cor principal para subtítulos */
+  margin-top: 30px;
+  text-align: left;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+/* Estilo para a lista de projetos destacados */
+.main-section .lista-projetos-destaque {
+  list-style: none; /* Remove os marcadores de bolinha */
+  padding-left: 0;
+}
+
+.main-section .lista-projetos-destaque li {
+  background-color: #f8f9fa; /* Um cinza bem claro para diferenciar */
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #e9ecef; /* Uma borda sutil */
+}
+
+/* Estilo para o parágrafo de conclusão */
+.main-section .conclusao {
+  margin-top: 25px;
+  font-weight: bold;
+  text-align: center; /* Centraliza a chamada final */
+  color: #003f80; /* Um tom de azul um pouco mais escuro */
+}
